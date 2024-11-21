@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IkeaXpary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div>
+    <div class="top-bar">
+        <div>
+        <a href="#">EN</a>
+        |
+        <a href="#">ID</a>
+        </div>
+        <div>
+            <a href="#">Inspirasi</a>
+            <a href="#">Program perencanaan</a>
+            <a href="#">Lacak Pengiriman Online</a>
+            <a href="#">Informasi Toko</a>
+            <a href="#">Desain ruang gratis</a>
+        </div>
+    </div>
+        <div class="header">
+        <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/logos/IKEA_logo.svg"height="40" width="100"alt="IKEA Logo"/>
+        <div class="search-bar">
+            <input placeholder="Cari..." type="text"/>
+            </div>
+        </div>
+    <div class="nav-bar">
+        <a href="#">Produk</a>
+        <a href="#">Ruangan</a>
+        <a href="#">Promo</a>
+        <a href="#">Kesempatan terakhir!</a>
+        <a href="#">Kebutuhan sehari-hari 99-199 ribu</a>
+        <a href="#">IKEA for Business</a>
+        <a href="#">Layanan Desain Interior</a>
+    </div>
+        <!--PAKAI W3SCHOOL  -->
+<div class="slideshow-container">
+    <div class="mySlides fade">
+    <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/pageImages/page__en_us_1729592407263__1.webp" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+    <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/pageImages/page__en_us_1726675984779_0_1.webp" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+    <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/pageImages/page__en_us_1726675985899_0_5.webp" style="width:100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+            for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+        </script>
+    <div class="container">
+        <h2>Jelajahi kategori unggulan kami</h2>
+        <p>Temukan beragam produk yang sesuai dengan gaya dan kebutuhan Anda.</p>
+        <div class="carousel">
+        <div class="carousel-item">
+        <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/pageImages/page__en_us_1726029608398_4_0.webp"height="300" width="200"alt="Kasur dan aksesoris">
+        <div class="caption">Kasur dan aksesoris</div>
+        </div>
+        <div class="carousel-item">
+        <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/pageImages/page__en_us_1726029608586_4_1.webp"height="300" width="200"alt="Duvet, bantal dan pelindung kasur"/>
+        <div class="caption">Duvet, bantal dan pelindung kasur</div>
+        </div>
+        <div class="carousel-item">
+        <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/pageImages/page__en_us_1726029608786_4_2.webp"height="300" width="200"alt="Karpet"/>
+        <div class="caption">Karpet</div>
+        </div>
+        <div class="carousel-item">
+        <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/pageImages/page__en_us_1726029608858_4_3.webp"height="300" width="200"alt="Lampu kamar tidur"/>
+        <div class="caption">Lampu kamar tidur</div>
+        </div>
+        <div class="carousel-item">
+        <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/pageImages/page__en_us_1726029608940_4_4.webp"height="300" width="200"alt="Dekorasi kamar tidur"/>
+        <div class="caption">Dekorasi kamar tidur</div>
+        </div>
+        </div>
+    </div>
+    <div class="containertengah">
+        <h1>Produk populer</h1>
+        <div class="product">
+        <img src="https://www.ikea.co.id/dairyfarm/id/images/346/0734621_PE739540_S4.jpg" height="400" width="200"alt="ADILS Kaki, putih"/>
+        <div class="product-name">ADILS</div>
+        <div class="product-description">Kaki, putih</div>
+        <div class="product-price">Rp 70.000</div>
+        </div>
+        <div class="product">
+        <img src="https://www.ikea.co.id/dairyfarm/id/images/132/0713244_PE729354_S4.jpg" height="400" width="200"alt="IVRIG Gelas, kaca bening, 45 cl"/>
+        <div class="product-name">IVRIG</div>
+        <div class="product-description">Gelas, kaca bening, 45 cl</div>
+        <div class="product-price">Rp 29.900</div>
+        </div>
+        <div class="product">
+        <img src="https://www.ikea.co.id/dairyfarm/id/images/671/1267153_PE928404_S4.jpg" height="400" width="200"alt="LENNART Unit laci, hitam"/>
+        <div class="product-name">LENNART</div>
+        <div class="product-description">Unit laci, hitam</div>
+        <div class="product-price highlight">Rp 249.000</div>
+        </div>
+        <div class="product">
+        <img src="https://www.ikea.co.id/dairyfarm/id/images/425/0642538_PE701238_S4.jpg" height="400" width="200"alt="DINERA Mug, abu-abu tua, 30 cl"/>
+        <div class="product-name">DINERA</div>
+        <div class="product-description">Mug, abu-abu tua, 30 cl</div>
+        <div class="product-price">Rp 29.900</div>
+        </div>
+    </div>
+    <div class="containersimple">
+        <h2>Produk rumah esensial harga hemat​</h2>
+        <p>Temukan berbagai produk rumah tangga yang fungsional dan bergaya untuk menciptakan rumah impian tanpa menguras kantong.​</p>
+        <div class="gambar1">
+            <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/pageImages/page__id_id_1726029023578__1.webp" height="720" width="1000" alt="">
+        </div>
+    </div>
+    <div class="containertinggi">
+        <h1>Penawaran terbaru di IKEA</h1>
+        <p>Geser untuk jelajahi penawaran menarik untuk melihat yang sedang hits di IKEA Indonesia.</p>
+        <div class="cards">
+            <div class="card">
+                <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/pageImages/page__en_us_1731656332136__0.webp" height="300" width="400" alt=""/>
+                <div class="card-content" style="background-color: #8d6e63;">
+                <h2 style="color: white;">VINTERFINT</h2>
+                <p style="color: white;">Bersiaplah untuk mengubah rumah jadi tempat liburan nyaman yang penuh keceriaan dengan koleksi VINTERFINT.</p>
+        </div>
+        </div>
+            <div class="card">
+                <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/pageImages/page__en_us_1728292831089__1.webp" height="300"width="400" alt=""/>
+                <div class="card-content" style="background-color: #72a39f;">
+                <h2 style="color: white;">Tidur lelap di ruang mana pun</h2>
+            <p style="color: white;">Tidur lebih lelap di mana saja dengan RÅHOLT kasur lipat yang nyaman, praktis, dan mudah disimpan yang siap membuat tidur Anda semakin berkualitas!</p>
+        </div>
+            </div>
+            <div class="card">
+                <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/pageImages/page__en_us_1731379702146__1.webp" height="300"width="400" alt=""/>
+                <div class="card-content" style="background-color: #c18e57;">
+                <p style="color: white;">Dekorasi impian kini jadi kenyataan, temukan penawaran spesial dengan harga lebih rendah untuk setiap ruangan!</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="containerakhir">
+    <div class="judul">Jelajahi IKEA</div>
+    <div class="deskripsi">Mulai dari lokasi toko kami, menikmati hidangan Swedia hingga bergabung dengan IKEA Family dan menemukan solusi bisnis, ada sesuatu untuk semua orang.</div>
+    <div class="grid">
+        <div class="grid-item">
+            <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/pageImages/page__en_us_1720414006700_3_14.webp" height="400" width="300" alt=""/>
+        <div class="label">Toko IKEA</div>
+    </div>
+        <div class="grid-item">
+            <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/pageImages/page__en_us_1720414006481_3_12.webp" height="400" width="300" alt=""/>
+        <div class="label">Makanan IKEA</div>
+    </div>
+        <div class="grid-item">
+            <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/pageImages/page__en_us_1720414006605_3_13.webp" height="400" width="300" alt=""/>
+        <div class="label">IKEA Bisnis</div>
+    </div>
+        <div class="grid-item">
+            <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/pageImages/page__en_us_1720414006344_3_11.webp" height="400" width="300" alt=""/>
+        <div class="label">IKEA Family</div>
+    </div>
+        <div class="grid-item">
+            <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/pageImages/page__en_us_1726030305958_5_0.webp" height="400" width="300" alt=""/>
+        <div class="label">Konten popular</div>
+        </div>  
+    </div>
+</div>
+    <div class="containerlast">
+        <h2>Produk rumah esensial harga hemat​</h2>
+        <p>Temukan berbagai produk rumah tangga yang fungsional dan bergaya untuk menciptakan rumah impian tanpa menguras kantong.​</p>
+        <div class="gambar1">
+            <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/pageImages/page__id_id_1731555330999__0.webp" height="720" width="1000" alt="">
+        </div>
+    <div class="footer">
+        <div class="content">
+            <div class="phone">
+                <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/commons/home-footer-iphone.png" alt="Handphone">
+            </div>
+            <!-- PAKAI AI -->
+        <div class="text-content">
+        <h2>Aplikasi IKEA Indonesia</h2>
+        <p>
+        Melalui aplikasi IKEA Indonesia, Anda dapat bergabung menjadi IKEA Family dan mendapatkan banyak reward spesial. Download dan daftar sekarang. GRATIS!
+        </p>
+            <div class="links"><div>
+            <h3>Tautan yang berguna</h3>
+            <ul>
+                <li><a href="#">Kebijakan Pengembalian 90 Hari</a></li>
+                <li><a href="#">IKEA untuk Bisnis</a></li>
+                <li><a href="#">Pick-up Point IKEA</a></li>
+                <li><a href="#">Bekerja di IKEA</a></li>
+                <li><a href="#">Ruang berita</a></li>
+                <li><a href="#">Tinggalkan saran</a></li>
+                <li><a href="#">Bangun Lelapmu</a></li>
+                <li><a href="#">Daftar kategori</a></li>
+            </ul>
+        </div>
+            <div>
+            <ul>
+                <li><a href="#">Layanan Pelanggan</a></li>
+                <li><a href="#">Hubungi Kami</a></li>
+                <li><a href="#">Ini adalah IKEA</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Layanan IKEA</a></li>
+                <li><a href="#">Diskon hingga 50%</a></li>
+                <li><a href="#">Harga Terjangkau</a></li>
+                <li><a href="#">Sertifikasi produk</a></li>
+            </ul>
+        </div>
+    </div>
+<div class="language">
+        <a href="#">EN</a>
+        |
+        <a href="#">ID</a>
+</div>
+        <a class="button" href="#">Download di iOS</a>
+        <a class="button" href="#">Download di Android</a>
+</html>
+</html>
